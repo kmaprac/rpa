@@ -1,0 +1,37 @@
+Step 1: Open UiPath Studio and Create a New Project
+Action: Launch UiPath Studio.
+Create Project: Click on "New Project" and select "Process."
+Name: Enter a name (e.g., "PDFAutomationDemo") and click "Create."
+
+Step 2: Drag and Drop a Sequence Activity
+Action: From the Activities panel, drag a Sequence activity onto the main workflow.
+Purpose: This will serve as the container for your activities.
+
+Step 3: Add Read PDF With OCR Activity
+Action: Search for the Read PDF With OCR activity in the Activities panel.
+Drag and Drop: Drag it into the Sequence.
+
+Step 4: Indicate the PDF File
+Action: Click on the "Indicate PDF" button in the Read PDF With OCR activity.
+Select File: Navigate to the location of the PDF file you want to read and select it.
+
+Step 5: Configure OCR Engine
+Action: In the Properties panel, set the OCR engine to use (e.g., Google OCR or Microsoft OCR).
+Purpose: This determines how the text will be extracted from the PDF.
+
+Step 6: Create Output Variable
+Action: In the Properties panel, find the Output property.
+Create Variable: Click on the "Create Variable" button.
+Variable Name: pdfText
+Variable Type: String
+Purpose: This variable will store the extracted text from the PDF.
+
+Step 7: Add a Message Box to Display Extracted Text
+Action: Drag a Message Box activity into the Sequence below the Read PDF With OCR activity.
+Configure Message Box:
+Text: Set the text to pdfText.
+Purpose: This will display the extracted text for verification.
+
+Step 8: Run the Workflow
+Action: Click the "Run" button in UiPath Studio to execute the workflow.
+Expected Outcome: The extracted text from the PDF will be displayed in a message box

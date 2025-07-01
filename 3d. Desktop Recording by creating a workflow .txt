@@ -1,0 +1,21 @@
+d. Desktop Recording by creating a workflow 
+Use "double Ui" and automate stuff (Scrape Text, Input Text, Click Button)  
+Insert the data from the following excel file. 
+Steps:  
+1.Create a new Blank Project and give it an appropriate name. Drag a Sequence activity from 
+Activity tab. 
+2.Add Excel Application Scope Activity and enter the path of the excel file. 
+3. Add Read Range and create a DataTable to store the data that will be read by read range. 
+4. Add Open Application activity, start Double UI then click on “Indicate window on screen” 
+option and select Double UI. 
+5. Add For each row in DataTable activity and iterate over DoubleUI datatable. 
+6. Add three type into activity in the for each activity. Indicate to the three textboxes in the 
+Double UI app. Enter the DataTable element you wan to enter in the Text attribute. 
+7. Add two get text activities and create two variables to store the transaction is andtotal. 
+Indicate these elements to the Get text activities. 
+In case of Total remove the name attribute from the Edit Selector.  
+8.  Add Click activity and indicate to Accept Button in Double UI. 
+9. Add three Write Cell Activities to enter the transaction id and total and to Update the status 
+column. ("E"+(DoubleUI.Rows.IndexOf(CurrentRow)+2).ToString) 
+10.Finally add a Message Box to print the success of the updation of Excel file. 
+Output: 

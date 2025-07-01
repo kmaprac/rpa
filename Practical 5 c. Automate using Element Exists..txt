@@ -1,0 +1,52 @@
+c. Automate using Element Exists. 
+
+Step 1: Open UiPath Studio and Create a New Project
+Action: Launch UiPath Studio and create a new project (e.g., "ElementExistsDemo").
+Purpose: To set up a workspace for implementing the Element Exists activity.
+
+Step 2: Drag and Drop a Sequence Activity
+Action: From the Activities panel, drag a Sequence activity onto the main workflow.
+Purpose: To organize the activities that will be performed in this practical.
+
+Step 3: Add the Element Exists Activity
+Action: Search for the Element Exists activity in the Activities panel.
+Drag and Drop: Drag the Element Exists activity into the Sequence.
+Purpose: This activity will check for the presence of a specified UI element.
+
+Step 4: Indicate the UI Element
+Action: Click on the "Indicate Element" button in the Element Exists activity.
+Select Element: Navigate to the application or webpage where the element you want to check is located (e.g., a button, label, or text field).
+Purpose: This step allows UiPath to capture the specific UI element you want to monitor.
+
+Step 5: Create an Output Variable
+Action: In the Properties panel of the Element Exists activity, find the Output property.
+Create Variable: Click on the "Create Variable" button (or manually create a variable in the Variables panel).
+Variable Name: elementExists
+Variable Type: Boolean
+Purpose: This variable will store the result of the Element Exists check (True if the element is found, False if not).
+
+Step 6: Add Conditional Logic Using an If Activity
+Action: Search for the If activity in the Activities panel and drag it below the Element Exists activity in the Sequence.
+Purpose: The If activity will allow you to execute different actions based on whether the element exists.
+Configure the If Activity:
+Condition: Set the condition to elementExists (the Boolean variable created earlier).
+Then Branch: This branch will execute if the element is found.
+Else Branch: This branch will execute if the element is not found.
+
+Step 7: Add Actions in the Then Branch
+Action: Inside the Then branch of the If activity, drag a Message Box activity.
+Configure Message Box:
+Text: Set the text to "Element exists on the screen."
+Purpose: This message will inform the user that the specified UI element was found.
+
+Step 8: Add Actions in the Else Branch
+Action: Inside the Else branch of the If activity, drag another Message Box activity.
+Configure Message Box:
+Text: Set the text to "Element does not exist on the screen."
+Purpose: This message will inform the user that the specified UI element was not found.
+
+Step 9: Run the Workflow
+Action: Click the "Run" button in UiPath Studio to execute the workflow.
+Expected Outcome:
+If the specified UI element exists, a message box will display: "Element exists on the screen."
+If the specified UI element does not exist, a message box will display: "Element does not exist on the screen."

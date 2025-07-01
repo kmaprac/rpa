@@ -1,0 +1,14 @@
+c. Automate UiPath Number Calculation (Addition,Subtraction, 
+Multiplication, Division of numbers). 
+Code:  
+Step 1: Open UiPath studio select process and give name to your project and click on create.  
+Step 2: Click on open main workflow  
+Step 3: go to activities and select sequence drag and drop.  
+Step 4: Create 4 integer variable. 
+Step 5: Select 2 input dialogs from the activities drag and drop. Enter the values in dialog 
+box. 
+Step 6 : Select another dialog box for selecting options 
+Step 7: Select switch activity and assign each case, required condition 
+Step 8: Repeat the same step as below for all the case. 
+Step 9: Click on debug file and click on run file: 
+ 

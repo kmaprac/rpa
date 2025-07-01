@@ -1,0 +1,11 @@
+f. Web Recording manually 
+Use "google.com" and automate stuff (Scrape Text, Input Text, Click Button)  
+Steps:  
+1.Create a new Blank Project and give it an appropriate name. Drag a Sequence activity from 
+Activity tab. 
+2. Select web recording under the recording option. 
+3.Open a Chrome window and from the web recording dialog select open browser and click 
+on the Chrome window. 
+4.In the url dialog enter google.com and press enter. 
+5. Now start recording by clicking on Record and click on the search button. Type the desired search 
+and click on the Google search button. The press Esc. 

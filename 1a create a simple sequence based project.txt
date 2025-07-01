@@ -1,0 +1,12 @@
+Practical : 1 Sequences and Flowcharts : 
+a. Create a simple sequence-based project. 
+Code :  
+Print message hello  
+Step 1: Open a UiPath studio.  
+Step 2: Select blank process and give a name to create a project.  
+Step 3: Click on open main workflow.  
+Step 4: In activity panel search sequence and select sequence and drop in main workflow.  
+Step 5: Now search for message box and select message box and drop in main workflow. 
+Step 6: In message box type hello world.  
+Step 7: click on debug file and select run file. 
+Output : 

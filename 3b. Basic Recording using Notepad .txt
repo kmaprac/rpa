@@ -1,0 +1,11 @@
+b. Basic Recording using Notepad 
+Steps:  
+1. Create a new Blank Project and give it an appropriate name. Drag a Sequence activity from 
+Activity tab. 
+2.Select Desktop Recording under Recording. 
+3. Open a new notepad, then on desktop recording click on open application and select 
+notepad then click ok on the prompt that appears 
+4. Start recording by clicking on record button in recording panel, then click in the text area 
+of notepad. 
+5. In the type into prompt enter the text you want to be typed. 
+Output:

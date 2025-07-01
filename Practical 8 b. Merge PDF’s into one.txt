@@ -1,0 +1,16 @@
+8b. Merge PDFs into One
+Step 1: Add Merge PDF Files Activity
+Action: Search for the Merge PDF Files activity in the Activities panel.
+Drag and Drop: Drag it into the Sequence below the previous activities.
+
+Step 2: Indicate PDF Files
+Action: In the Properties panel, specify the list of PDF files you want to merge.
+Example: You can use an array of strings to specify file paths, e.g., {"C:\path\file1.pdf", "C:\path\file2.pdf"}.
+
+Step 3: Create Output File Path
+Action: Set the output file path where the merged PDF will be saved.
+Example: Set it to C:\path\mergedOutput.pdf.
+
+Step 4: Run the Workflow
+Action: Click "Run" to execute the workflow.
+Expected Outcome: The specified PDF files will be merged into one PDF file at the specified output path.

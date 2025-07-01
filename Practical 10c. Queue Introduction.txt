@@ -1,0 +1,24 @@
+### 10c. Queue Introduction
+
+**Step 1: Log in to Orchestrator**
+- **Action:** Open your web browser and navigate to your Orchestrator URL.
+- **Enter Credentials:** Log in with your username and password.
+
+**Step 2: Navigate to the Queues Section**
+- **Action:** Click on the "Queues" tab in the Orchestrator dashboard.
+
+**Step 3: Create a New Queue**
+- **Action:** Click on the "Add Queue" button.
+- **Configure Queue Settings:**
+  - **Queue Name:** Enter a name for the queue.
+  - **Description:** Optionally, provide a description.
+- **Click Create:** This will create a new queue.
+
+**Step 4: Add Items to Queue**
+- **Action:** Click on the newly created queue.
+- **Add Queue Items:** Use the "Add Queue Item" button to add items to the queue.
+  - **Input Data:** Specify the data for the queue item.
+
+**Step 5: Retrieve Queue Items in a Process**
+- **Action:** In your UiPath project, use the `Get Queue Items` activity to retrieve items from the queue.
+- **Expected Outcome:** You can now manage and process items from the queue in your automation workflows.

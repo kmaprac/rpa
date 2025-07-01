@@ -1,0 +1,41 @@
+Step 1: Open UiPath Studio and Create a New Project
+Action: Launch UiPath Studio and create a new project (e.g., "FindRelativeDemo").
+Purpose: To set up a workspace for implementing the Find Relative activity.
+
+Step 2: Drag and Drop a Sequence Activity
+Action: From the Activities panel, drag a Sequence activity onto the main workflow.
+Purpose: To organize the activities that will be performed in this practical.
+
+Step 3: Add the Find Relative Activity
+Action: Search for the Find Relative activity in the Activities panel.
+Drag and Drop: Drag the Find Relative activity into the Sequence.
+Purpose: This activity will allow you to find a UI element relative to another specified element.
+
+Step 4: Indicate the Base Element
+Action: Click on the "Indicate Element" button in the Find Relative activity.
+Select Base Element: Navigate to the application or webpage where the base element is located (e.g., a label or a parent container).
+Purpose: This step allows UiPath to capture the specific base UI element from which you want to find the relative element.
+
+Step 5: Configure the Find Relative Activity
+Action: In the Properties panel of the Find Relative activity, configure the following:
+Output: Create a variable to store the found relative element.
+Variable Name: relativeElement
+Variable Type: UiElement
+Set Relative Position: Specify the relative position to find the target element (e.g., Above, Below, Left, Right).
+Purpose: This variable will hold the UI element that is found relative to the specified base element.
+
+Step 6: Use the Relative Element
+Action: After the Find Relative activity, you can perform actions using the relativeElement.
+Example Action: Drag a Click activity into the Sequence below the Find Relative activity.
+Indicate Element: In the Click activity, set the Element property to relativeElement.
+Purpose: This action will click on the relative element that was retrieved.
+
+Step 7: Add a Message Box to Confirm the Action
+Action: After the Click activity, drag a Message Box activity into the Sequence.
+Configure Message Box:
+Text: Set the text to "Clicked on the relative element."
+Purpose: This message box will confirm that the action was performed successfully.
+
+Step 8: Run the Workflow
+Action: Click the "Run" button in UiPath Studio to execute the workflow.
+Expected Outcome: The automation will retrieve the relative element based on the specified base element and perform a click action on it, followed by displaying a confirmation message.

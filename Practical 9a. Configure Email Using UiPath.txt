@@ -1,0 +1,24 @@
+### 9a. Configure Email Using UiPath
+
+**Step 1: Open UiPath Studio and Create a New Project**
+- **Action:** Launch UiPath Studio.
+- **Create Project:** Click on "New Project" and select "Process."
+- **Name:** Enter a name (e.g., "EmailAutomationDemo") and click "Create."
+
+**Step 2: Drag and Drop a Sequence Activity**
+- **Action:** From the Activities panel, drag a `Sequence` activity onto the main workflow.
+
+**Step 3: Add the Email Application Scope Activity**
+- **Action:** Search for the `Email Application Scope` activity in the Activities panel.
+- **Drag and Drop:** Drag it into the `Sequence`.
+
+**Step 4: Configure Email Account**
+- **Action:** In the Properties panel, set the following:
+  - **Email Provider:** Choose your email provider (e.g., `SMTP`, `IMAP`, `Outlook`).
+  - **Email Address:** Enter your email address.
+  - **Password:** Enter your email password (consider using secure strings).
+  - **Server:** Specify the email server (e.g., `smtp.gmail.com` for Gmail).
+
+**Step 5: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** The email application scope will be configured successfully.

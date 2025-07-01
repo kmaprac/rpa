@@ -1,0 +1,23 @@
+### 9d. Save Email Attachments
+
+**Step 1: Add Get Mail Messages Activity**
+- **Action:** Inside the `Email Application Scope`, add another `Get Mail Messages` activity to retrieve emails.
+
+**Step 2: Add a For Each Activity**
+- **Action:** Drag a `For Each` activity below the `Get Mail Messages` activity.
+- **Configure For Each Activity:**
+  - **TypeArgument:** Set this to `MailMessage`.
+  - **Values:** Set this to `mailMessages`.
+
+**Step 3: Add Save Attachment Activity**
+- **Action:** Inside the `For Each` activity, search for the `Save Mail Attachments` activity.
+- **Drag and Drop:** Drag it into the loop.
+
+**Step 4: Configure Save Mail Attachments Activity**
+- **Action:** In the Properties panel, set the following:
+  - **MailMessage:** Set this to `item` (the current email).
+  - **FolderPath:** Specify the folder path where attachments will be saved (e.g., `C:\path\attachments`).
+
+**Step 5: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** Attachments from the retrieved emails will be saved to the specified folder.

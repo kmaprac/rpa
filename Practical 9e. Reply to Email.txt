@@ -1,0 +1,14 @@
+### 9e. Reply to Email
+
+**Step 1: Add Reply to Email Activity**
+- **Action:** Inside the `Email Application Scope`, search for the `Reply to Email` activity.
+- **Drag and Drop:** Drag it into the `Sequence`.
+
+**Step 2: Configure Reply to Email Activity**
+- **Action:** In the Properties panel, set the following:
+  - **MailMessage:** Set this to the email you want to reply to (e.g., `mailMessages(0)` for the first email).
+  - **Body:** Set the reply body text.
+
+**Step 3: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** A reply will be sent to the specified email.

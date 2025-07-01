@@ -1,0 +1,20 @@
+### 10b. Run Jobs from Orchestrator
+
+**Step 1: Log in to Orchestrator**
+- **Action:** Open your web browser and navigate to your Orchestrator URL.
+- **Enter Credentials:** Log in with your username and password.
+
+**Step 2: Navigate to the Jobs Section**
+- **Action:** Click on the "Jobs" tab in the Orchestrator dashboard.
+
+**Step 3: Start a New Job**
+- **Action:** Click on the "Start Job" button.
+- **Select Process:** Choose the process you want to run from the dropdown menu.
+
+**Step 4: Configure Job Settings**
+- **Action:** Set any necessary parameters or settings for the job.
+- **Click Start:** This will initiate the job execution.
+
+**Step 5: Monitor Job Execution**
+- **Action:** Check the job status in the "Jobs" section.
+- **Expected Outcome:** The job will run, and you can view logs and results in real-time.

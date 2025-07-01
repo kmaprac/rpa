@@ -1,0 +1,21 @@
+### 10d. Build UiPath Chatbot using Google Dialogflow
+
+**Step 1: Create a Google Dialogflow Account**
+- **Action:** Go to the Google Dialogflow website and sign up for an account.
+- **Create a New Agent:** Click on "Create Agent" and fill in the required details.
+
+**Step 2: Define Intents**
+- **Action:** In Dialogflow, create intents that represent user queries.
+- **Add Training Phrases:** Provide examples of what users might say.
+
+**Step 3: Set Up Fulfillment**
+- **Action:** Enable webhook fulfillment in the intent settings.
+- **Configure Webhook URL:** Set the URL to your UiPath Orchestrator webhook endpoint.
+
+**Step 4: Create a UiPath Process**
+- **Action:** In UiPath Studio, create a new process that will handle requests from Dialogflow.
+- **Use HTTP Request Activity:** Set up an HTTP request to receive data from Dialogflow.
+
+**Step 5: Test the Chatbot**
+- **Action:** Use the Dialogflow console to test your chatbot.
+- **Expected Outcome:** The chatbot should respond based on the intents and fulfillments you have set up.

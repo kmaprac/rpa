@@ -1,0 +1,13 @@
+b. Create a flowchart-based project. 
+Code : 
+Step 1: Open UiPath studio and click on process give name to your project.  
+Step 2: Click on Open main workflow. Drag and drop flowchart from activities panel. 
+Step 3: Drag and drop input dailog box inside a flowchart.  
+Step 4: Create a variable “clgname” and give your input label 
+Step 5: Drag and drop a message box below input dialog box and enter your message inside 
+message box. 
+Step 6: Click on debug file and select run file. 
+Output : 
+ 
+Actual Output : 
+ 

@@ -1,0 +1,16 @@
+e. Create an automation using Delay Activity between two writeline 
+activities to separate their execution by 5 seconds 
+To better understand how the Delay activity works, let us see an example of an automation 
+that writes two messages to the Output panel with a delay of 50 seconds. 
+Perform the following steps:  
+1. First, create a new Flowchart.  
+2. Add a Write line activity from the Activities panel and connect it to the Start node. 
+3. Select the Write line activity. Now, type the following text into the Text box:  
+“Hey, what is your name?” 
+4. Next, add a Delay activity and connect it to the Write line activity.  
+5. Select the Delay activity and go to the Properties panel. In the Duration field, set 00:00:50. 
+This is a 50-second delay between the two logged messages.  
+6. Take another Write line activity and connect it to the Delay activity. In the Text field, write 
+“My name is Andrew Ng”: 
+7. After clicking on the Run button, the Output panel shows the message that delays it by 50 
+seconds:  

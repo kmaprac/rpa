@@ -1,0 +1,27 @@
+### 10a. Deploy Bots to Orchestrator
+
+**Step 1: Open UiPath Studio and Create a New Project**
+- **Action:** Launch UiPath Studio.
+- **Create Project:** Click on "New Project" and select "Process."
+- **Name:** Enter a name (e.g., "OrchestratorDeploymentDemo") and click "Create."
+
+**Step 2: Publish the Project**
+- **Action:** Click on the "Publish" button in the UiPath Studio toolbar.
+- **Configure Publish Settings:**
+  - **Package Name:** Set a name for the package.
+  - **Version:** Specify the version number.
+  - **Orchestrator URL:** Enter the URL of your Orchestrator instance.
+- **Click Publish:** This will upload the project to the Orchestrator.
+
+**Step 3: Verify Deployment in Orchestrator**
+- **Action:** Log in to your Orchestrator account.
+- **Navigate to Packages:** Check the "Packages" section to ensure your project is listed.
+
+**Step 4: Run the Process from Orchestrator**
+- **Action:** Navigate to the "Processes" section in Orchestrator.
+- **Create a New Process:** Click on "Add Process" and select the published package.
+- **Click Create:** This will create a new process that can be run from Orchestrator.
+
+**Step 5: Run the Process**
+- **Action:** Click on the "Start" button next to the process to execute it.
+- **Expected Outcome:** The bot will run as per the defined process in Orchestrator.

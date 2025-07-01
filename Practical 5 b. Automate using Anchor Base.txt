@@ -1,0 +1,18 @@
+b. Automate using Anchor Base 
+This control is used for locating the UI element by looking at the UI element next to it. This 
+activity is used when we have no control over the selector. That means when we do not have 
+a reliable selector, then we should use the Anchor base control to locate the UI element. 
+We can use the Anchor base control as explained in the following section:  
+1. Drag and drop a Flowchart activity on the Designer panel of a blank project. Also, drag and 
+drop an Anchor base control from the Activities panel. Connect the Anchor base control with 
+Start.  
+2. Double-click on the Anchor base control:    
+3. There are two activities that we have to supply to the Anchor base control: Anchor and 
+action activities.  
+4. Drag and drop the Anchor base activity (for example; Find Element activity) in the Anchor 
+field and Action activity (for example; Type into) in the Drop Action Activity Here field of 
+the Anchor base control.  
+The Anchor base activity will find the relative element nearby the element on which you want 
+to perform the Action, and the Action activity will perform the appropriate action that you 
+have specified 
+

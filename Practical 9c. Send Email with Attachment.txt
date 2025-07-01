@@ -1,0 +1,16 @@
+### 9c. Send Email with Attachment
+
+**Step 1: Add Send SMTP Mail Message Activity**
+- **Action:** Inside the `Email Application Scope`, search for the `Send SMTP Mail Message` activity.
+- **Drag and Drop:** Drag it into the `Sequence`.
+
+**Step 2: Configure Send SMTP Mail Message Activity**
+- **Action:** In the Properties panel, set the following:
+  - **To:** Enter the recipient's email address.
+  - **Subject:** Set the email subject.
+  - **Body:** Set the email body.
+  - **Attachments:** Specify the file path of the attachment (e.g., `C:\path\file.txt`).
+
+**Step 3: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** An email with the specified attachment will be sent successfully.

@@ -1,0 +1,26 @@
+8c. Get PDF Total Page Count Using Regex
+Step 1: Add Read PDF With OCR Activity
+Action: Drag another Read PDF With OCR activity into the Sequence.
+
+Step 2: Indicate the PDF File
+Action: Click on "Indicate PDF" and select the PDF file for which you want to get the page count.
+
+Step 3: Create Output Variable
+Action: Create a variable (e.g., pdfText) to store the extracted text from the PDF.
+
+Step 4: Use Regex to Get Page Count
+Action: Use an Assign activity to extract the page count using a regex pattern.
+Example:
+Variable Name: pageCount
+Value: System.Text.RegularExpressions.Regex.Match(pdfText, "\d+").Value
+Purpose: This regex pattern will match the first sequence of digits found in the extracted text, which typically represents the page count.
+
+Step 5: Add a Message Box to Display Page Count
+Action: Drag a Message Box activity into the Sequence.
+Configure Message Box:
+Text: Set the text to pageCount.
+Purpose: This will display the total page count extracted from the PDF.
+
+Step 6: Run the Workflow
+Action: Click "Run" to execute the workflow.
+Expected Outcome: The total page count will be displayed in a message box.

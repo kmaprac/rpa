@@ -1,0 +1,11 @@
+### 8e. Extract Data from a PDF or Excel File and Populate it into a Database or Spreadsheet (Repeat)
+
+**Step 1: Repeat Steps from 8d**
+- **Action:** Follow the same steps as in 8d to extract data from another PDF or Excel file.
+
+**Step 2: Ensure Different File Paths**
+- **Action:** Make sure to use different file paths or variables for the new PDF or Excel file.
+
+**Step 3: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** The data from the new PDF or Excel file will be populated into the specified destination.

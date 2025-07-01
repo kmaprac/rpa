@@ -1,0 +1,20 @@
+### 8d. Extract Data from a PDF or Excel File and Populate it into a Database or Spreadsheet
+
+**Step 1: Add Read PDF Activity**
+- **Action:** Drag a `Read PDF Text` or `Read PDF With OCR` activity into the `Sequence`.
+
+**Step 2: Indicate the PDF File**
+- **Action:** Click on "Indicate PDF" and select the PDF file from which you want to extract data.
+
+**Step 3: Create Output Variable**
+- **Action:** Create a variable (e.g., `pdfData`) to store the extracted data.
+
+**Step 4: Add Data Manipulation Activities**
+- **Action:** Use activities like `Write Range` to write the extracted data into an Excel file.
+  - **Example:**
+    - **Excel Application Scope:** Drag this activity to open the Excel file.
+    - **Write Range:** Inside the Excel Application Scope, use this activity to write `pdfData` to a specified range.
+
+**Step 5: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** The extracted data will be populated into the specified Excel file.

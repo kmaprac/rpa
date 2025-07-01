@@ -1,0 +1,41 @@
+Step 1: Open UiPath Studio and Create a New Project
+Action: Launch UiPath Studio and create a new project (e.g., "FindChildrenDemo").
+Purpose: To set up a workspace for implementing the Find Children activity.
+
+Step 2: Drag and Drop a Sequence Activity
+Action: From the Activities panel, drag a Sequence activity onto the main workflow.
+Purpose: To organize the activities that will be performed in this practical.
+
+Step 3: Add the Find Children Activity
+Action: Search for the Find Children activity in the Activities panel.
+Drag and Drop: Drag the Find Children activity into the Sequence.
+Purpose: This activity will retrieve all child elements of a specified parent element.
+
+Step 4: Indicate the Parent Element
+Action: Click on the "Indicate Element" button in the Find Children activity.
+Select Parent Element: Navigate to the application or webpage where the parent element is located (e.g., a list, table, or group of buttons).
+Purpose: This step allows UiPath to capture the specific parent UI element from which you want to find children.
+
+Step 5: Configure the Find Children Activity
+Action: In the Properties panel of the Find Children activity, configure the following:
+Output: Create a variable to store the found child elements.
+Variable Name: childrenElements
+Variable Type: IEnumerable<UiElement>
+Purpose: This variable will hold the collection of child elements retrieved from the specified parent.
+
+Step 6: Process the Retrieved Child Elements
+Action: Drag a For Each activity into the Sequence below the Find Children activity.
+Configure For Each Activity:
+TypeArgument: Set this to UiElement.
+Values: Set this to childrenElements (the variable created to store child elements).
+Purpose: This loop will iterate through each child element found.
+
+Step 7: Add Actions Inside the For Each Loop
+Action: Inside the For Each activity, drag a Message Box activity.
+Configure Message Box:
+Text: Set the text to item.ToString() (where item is the default variable name for the current child element in the loop).
+Purpose: This message box will display the string representation of each child element, allowing you to verify that the elements were retrieved successfully.
+
+Step 8: Run the Workflow
+Action: Click the "Run" button in UiPath Studio to execute the workflow.
+Expected Outcome: A series of message boxes will appear, each displaying the string representation of the child elements found under the specified parent element.

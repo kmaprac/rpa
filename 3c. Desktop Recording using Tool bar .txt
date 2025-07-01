@@ -1,0 +1,8 @@
+c. Desktop Recording using Tool bar 
+This is similar to Basic recording with the added advantage of working with multiple actions. 
+It is most suitable for automating Desktop applications. Desktop recorder generates Partial 
+selectors. The Partial selectors, have a hierarchical structure. They are split into parent child 
+views for recognizing the UI element properly. 
+Please note in the preceding image there is a Attach Window activities and other activities are 
+nested under it. This flow is generated Desktop recorder: 
+Output:

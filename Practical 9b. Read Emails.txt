@@ -1,0 +1,25 @@
+### 9b. Read Emails
+
+**Step 1: Add Get Mail Messages Activity**
+- **Action:** Inside the `Email Application Scope`, search for the `Get Mail Messages` activity.
+- **Drag and Drop:** Drag it into the `Sequence`.
+
+**Step 2: Configure Get Mail Messages Activity**
+- **Action:** In the Properties panel, set the following:
+  - **Output:** Create a variable (e.g., `mailMessages`) to store the retrieved emails.
+  - **Top:** Set the number of emails to retrieve (e.g., `10`).
+
+**Step 3: Add a For Each Activity**
+- **Action:** Drag a `For Each` activity below the `Get Mail Messages` activity.
+- **Configure For Each Activity:**
+  - **TypeArgument:** Set this to `MailMessage`.
+  - **Values:** Set this to `mailMessages`.
+
+**Step 4: Add a Message Box to Display Email Subject**
+- **Action:** Inside the `For Each` activity, drag a `Message Box` activity.
+- **Configure Message Box:**
+  - **Text:** Set the text to `item.Subject` (where `item` is the current email in the loop).
+
+**Step 5: Run the Workflow**
+- **Action:** Click "Run" to execute the workflow.
+- **Expected Outcome:** The subjects of the retrieved emails will be displayed in message boxes.

@@ -1,0 +1,19 @@
+b. Demonstrate switch statement with an example 
+The Switch activity The Switch activity can be used to make a choice. When we have various          
+options available and want to execute one option, we frequently use the Switch activity. By 
+default, the Switch activity takes an integer argument. If we want to take a desired argument, 
+then we can change it from the Properties panel, from the TypeArgument list. The Switch 
+activity is very useful in   the categorization of data according to one's own choice. 
+Perform the following steps:  
+1. Add a Sequence activity.  
+2. Add an Input dialog activity inside the Sequence. 
+3. Now, create an integer type variable L. 
+4. Specify the newly created variable's name in the Result property inside the Properties 
+panel. 
+5. Add the Switch activity under the Input dialog activity.  
+6. In the Expression field, set LNPE to check whether the number is divisible by 2 or not.  
+7. Add a Write line activity to the Default section and type the L5P4USJOH  JTBOFWFOOVNCFS
+ in the text field. 
+8. Now, create Case 1, add the one other Write line activity to it, and type L5P4USJOH 
+JTBOPEEOVNCFS
+ in the text field: 

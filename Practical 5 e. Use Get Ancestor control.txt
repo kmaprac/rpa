@@ -1,0 +1,40 @@
+Step 1: Open UiPath Studio and Create a New Project
+Action: Launch UiPath Studio and create a new project (e.g., "GetAncestorDemo").
+Purpose: To set up a workspace for implementing the Get Ancestor activity.
+
+Step 2: Drag and Drop a Sequence Activity
+Action: From the Activities panel, drag a Sequence activity onto the main workflow.
+Purpose: To organize the activities that will be performed in this practical.
+
+Step 3: Add the Get Ancestor Activity
+Action: Search for the Get Ancestor activity in the Activities panel.
+Drag and Drop: Drag the Get Ancestor activity into the Sequence.
+Purpose: This activity will retrieve the ancestor of a specified UI element.
+
+Step 4: Indicate the Child Element
+Action: Click on the "Indicate Element" button in the Get Ancestor activity.
+Select Child Element: Navigate to the application or webpage where the child element is located (e.g., a button or text field).
+Purpose: This step allows UiPath to capture the specific child UI element for which you want to find the ancestor.
+
+Step 5: Configure the Get Ancestor Activity
+Action: In the Properties panel of the Get Ancestor activity, configure the following:
+Output: Create a variable to store the ancestor element.
+Variable Name: ancestorElement
+Variable Type: UiElement
+Purpose: This variable will hold the ancestor UI element retrieved from the specified child element.
+
+Step 6: Use the Ancestor Element
+Action: After the Get Ancestor activity, you can perform actions using the ancestorElement.
+Example Action: Drag a Click activity into the Sequence below the Get Ancestor activity.
+Indicate Element: In the Click activity, set the Element property to ancestorElement.
+Purpose: This action will click on the ancestor element that was retrieved.
+
+Step 7: Add a Message Box to Confirm the Action
+Action: After the Click activity, drag a Message Box activity into the Sequence.
+Configure Message Box:
+Text: Set the text to "Clicked on the ancestor element."
+Purpose: This message box will confirm that the action was performed successfully.
+
+Step 8: Run the Workflow
+Action: Click the "Run" button in UiPath Studio to execute the workflow.
+Expected Outcome: The automation will retrieve the ancestor of the specified child element and perform a click action on it, followed by displaying a confirmation message.

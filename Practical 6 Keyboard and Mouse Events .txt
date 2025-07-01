@@ -1,0 +1,142 @@
+Practical 6 : Keyboard and Mouse Events 
+
+
+
+a. Demonstrate the following activities in UiPath: 
+i. 
+ii. 
+iii. 
+Mouse (click, double click and hover)  
+Type into  
+Type Secure text 
+
+.i. Mouse (click, double click and hover)  
+
+1. Click Activity  
+Step 1: Go to uipath studio  
+Step 2: Click on Workflow and Drag Flow Chart from Activities panal.  
+Step 3: Double Click on FlowChart.  
+Step 4 : Drag and drop the Click activity  
+Step 5: Double click on click activity.  
+Step 6: Click on indicate on screen and indicate the UI element you want to click on.  
+Step 7: Now click on run. 
+Output: 
+
+2. Double Click Activity  
+Step 1: Go to uipath studio  
+Step 2: Click on Workflow and Drag Flow Chart from Activities panal.  
+Step 3: Double Click on FlowChart.  
+Step 4 : Drag and drop the Double Click activity  
+Step 5: Double click on double click activity.  
+Step 6: Click on indicate on screen and indicate the UI element you want to click on.  
+Step 7: Now click on run. 
+Output: 
+
+3. Hover Activity  
+Step 1: Go to uipath studio  
+Step 2: Click on Workflow and Drag Flow Chart from Activities panal.  
+Step 3: Double Click on FlowChart.  
+Step 4 : Drag and drop the Hover activity  
+Step 5: Double click on hover activity.  
+Step 6: Click on indicate on screen and indicate the UI element you want to click on.  
+Step 7: Now click on run.  
+Output: 
+
+ii Type into  
+Step1: Add a new sequence and name it as Type into Activity  
+Step2: Search for Type into Activity in the activity panel and drag it inside the sequence.  
+Step3: Click on Indicate on Screen and indicate the pointer towards notepad editor.  
+Step4: Type the message to be printed on the notepad in the editable text section  
+Step5: Hit the Run Button to see the results.  
+Output: 
+
+iii Type secure text  
+Step1: Add a new flowchart  
+Step2: Search for Type secure text Activity in the activity panel and drag it inside the 
+sequence. 
+Step3: Click on Indicate on Screen and indicate the pointer towards notepad editor.  
+Step4: Create a variable of type “securestring” and assign it to SecureText property in the 
+properties.  
+Step5:Drag and drop a assign activity.  
+Step6: Assign the variable created with this value “new 
+system.net.NetworkCredential(String.Empty,"Test@123").SecurePassword”  
+Step7: Hit the Run Button to see the results.  
+Output: 
+
+
+b. Demonstrate the following events in UiPath: 
+
+i. Element Trigger  
+On click element  
+Steps1: Click on user events select on click element  
+Step 2: Single click on icon present in the toolbar.  
+Step 3: Drag and drop message box inside event handler.  
+Step 4: Write any message you want to display. 
+Step 5: Run the file.  
+Step 6: Click the icon which you selected in user event. 
+Output: 
+
+
+
+
+
+On keypress event  
+Step1: Click on user events select on key press element  
+Step 2: Indicate on screen and select the key.  
+Step 3: Drag and drop message box inside event handler.  
+Step 4: Write any message you want to display. 
+Step 5: Run the file.  
+Step 6: Click the key which you selected in user event. 
+Output: 
+
+
+ii. Image trigger  
+Steps1: Click on user events select on click image element  
+Step 2: Single click on any image present in the screen.  
+Step 3: Drag and drop message box inside event handler.  
+Step 4: Write any message you want to display. 
+Step 5: Run the file.  
+Step 6: Click the image which you selected in user event.  
+Output: 
+
+
+iii. System trigger  
+Step1: Click on user events select on monitor keyboard element  
+Step 2: Select any key.  
+Step 3: Drag and drop message box inside event handler.  
+Step 4: Write any message you want to display. 
+       
+    Step 5: Run the file.  
+    Step 6: Click the key which you selected in user event. 
+Output: 
+
+
+
+
+c. Automate the process of launching an assistant bot on a keyboard 
+event. 
+Let us say we want our assistant bot to start automating only when we trigger an event. For 
+example, the user wants his Robot to open and start typing in the Notepad window when he 
+presses Alt + W. This can be achieved using the Hotkey trigger. Also, inside the Event 
+handler, just create or record the sequence of steps to be followed. The detailed procedure has 
+been explained in the following sections:  
+1. Drag and drop the Monitor events activity: In this step, we will just drag and drop the 
+Monitor events activity into the workflow. When we double-click on it, it will look like this: 
+2.Drag the Hotkey trigger activity: In the next step, we will use the Hotkey trigger activity for 
+the user to start the automation process. Assign Alt + W to the hotkey so that, when the user 
+presses this hotkey, the event will be executed:          
+3.Open Notepad and type into it: Our final step is to record the sequence of the steps to be 
+performed. In this case, this is to open Notepad and then type into it. For that just use the help 
+of the Desktop recorder. First, we double-click on the Notepad application in the window as 
+shown in the screenshot. Select the ClickType as CLICK_DOUBLE from the Properties 
+panel: 
+After that, we record the typing action and close the Notepad window. Then click on Do not 
+Save because you do not want to save your file. The sequence is shown in the following 
+screenshot: 
+We have also indicated the anchor to recognize the correct button to be clicked (in this case, 
+the close window button's anchor is the maximize button). This makes it easier for the Robot 
+to find the UI element. 
+Now, on pressing Alt + W the Robot will start executing the sequence. 
+
+
+
